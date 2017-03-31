@@ -19,7 +19,8 @@
     "test-e2e": "gulp e2e.test",
     "postinstall": "node tools/scripts/postinstall.js",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "prepublish": "npm run snyk-protect",
+    "publish": "node ./node_modules/gulp/bin/gulp.js"
   },
   "dependencies": {
     "angular": "^1.6",
@@ -58,6 +59,7 @@
     "view-helpers": "0.1.5"
   },
   "devDependencies": {
+    "@octopusdeploy/gulp-octo": "0.0.8",
     "babel-core": "latest",
     "babel-loader": "latest",
     "babel-preset-es2015": "latest",
@@ -67,6 +69,7 @@
     "expect.js": "latest",
     "file-loader": "latest",
     "gulp": "latest",
+    "gulp-bump": "^2.7.0",
     "gulp-concat": "latest",
     "gulp-csslint": "latest",
     "gulp-cssmin": "latest",
