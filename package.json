@@ -12,6 +12,7 @@
   },
   "license": "MIT",
   "scripts": {
+    "start:: "node index.js",
     "start": "cross-env DEBUG=cluster node server",
     "mocha": "node tools/test/run-mocha.js",
     "karma": "node node_modules/karma/bin/karma start karma.conf.js",
